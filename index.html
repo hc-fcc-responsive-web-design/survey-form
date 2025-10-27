@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <main id="container">
+      <header id="header" class="item">
+        <h1 id="title">
+          The Psychopath Test
+        </h1>
+        <p id="description">
+          Original 20 questions by <a href="https://en.wikipedia.org/wiki/Robert_D._Hare" target="_blank">Dr. Robert D. Hare</a>
+        </p>
+      </header>
+      <article id="content" class="item">
+        <form id="survey-form">
+          <div class="field">
+            <label id="name-label" class="field-label" for="name">
+              Name
+            </label>
+            <input id="name" class="input" type="text" name="name" placeholder="Please enter your full name" required="">
+          </div>
+          <div class="field">
+            <label id="email-label" class="field-label" for="email">
+              Email
+            </label>
+            <input id="email" class="input" type="email" name="email" placeholder="Please enter your email" required="">
+          </div>
+          <div class="field">
+            <label id="number-label" class="field-label" for="number">
+              Age
+            </label>
+            <input id="number" class="input" type="number" name="number" placeholder="Please enter your age" min="18" max="100" required="">
+          </div>
+          <div class="field">
+            <label id="dropdown-label" class="field-label" for="dropdown">
+              Sex
+            </label>
+            <select id="dropdown" class="input" type="text" name="dropdown" required="">
+              <option disabled="" selected="">
+                Please select your biological sex
+              </option>
+              <option class="option" value="Male">
+                Male
+              </option>
+              <option class="option" value="Female">
+                Female
+              </option>
+              <option class="option" value="Intersex">
+                Intersex
+              </option>
+              <option class="option" value="No-answer">
+                Prefer not to answer
+              </option>
+            </select>
+          </div>
+          <section id="survey">
+            <dl class="field">
+              <dt class="field-label">
+                1. Do you have "excess glibness" or superficial charm?
+              </dt>
+              <dd class="radio-group">
+                <label for="superficial-charm_disagree">
+                  <input id="superficial-charm_disagree" type="radio" name="superficial-charm" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="superficial-charm_somewhat">
+                  <input id="superficial-charm_somewhat" type="radio" name="superficial-charm" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="superficial-charm_agree">
+                  <input id="superficial-charm_agree" type="radio" name="superficial-charm" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                2. Do you have a grandiose sense of self-worth?
+              </dt>
+              <dd class="radio-group">
+                <label for="grandiosity_disagree">
+                  <input id="grandiosity_disagree" type="radio" name="grandiosity" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="grandiosity_somewhat">
+                  <input id="grandiosity_somewhat" type="radio" name="grandiosity" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="grandiosity_agree">
+                  <input id="grandiosity_agree" type="radio" name="grandiosity" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                3. Do you have an excess need for stimulation or proneness to boredom?
+              </dt>
+              <dd class="radio-group">
+                <label for="stimulation_disagree">
+                  <input id="stimulation_disagree" type="radio" name="stimulation" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="stimulation_somewhat">
+                  <input id="stimulation_somewhat" type="radio" name="stimulation" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="stimulation_agree">
+                  <input id="stimulation_agree" type="radio" name="stimulation" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                4. Are you a pathological liar?
+              </dt>
+              <dd class="radio-group">
+                <label for="lying_disagree">
+                  <input id="lying_disagree" type="radio" name="lying" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="lying_somewhat">
+                  <input id="lying_somewhat" type="radio" name="lying" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="lying_agree">
+                  <input id="lying_agree" type="radio" name="lying" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                5. Are you conning or manipulative?
+              </dt>
+              <dd class="radio-group">
+                <label for="manipulation_disagree">
+                  <input id="manipulation_disagree" type="radio" name="manipulation" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="manipulation_somewhat">
+                  <input id="manipulation_somewhat" type="radio" name="manipulation" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="manipulation_agree">
+                  <input id="manipulation_agree" type="radio" name="manipulation" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                6. Do you display a lack of remorse or guilt?
+              </dt>
+              <dd class="radio-group">
+                <label for="remorselessness_disagree">
+                  <input id="remorselessness_disagree" type="radio" name="remorselessness" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="remorselessness_somewhat">
+                  <input id="remorselessness_somewhat" type="radio" name="remorselessness" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="remorselessness_agree">
+                  <input id="remorselessness_agree" type="radio" name="remorselessness" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                7. Do you display emotional poverty, limited range or depth of feelings?
+              </dt>
+              <dd class="radio-group">
+                <label for="shallow-affect_disagree">
+                  <input id="shallow-affect_disagree" type="radio" name="shallow-affect" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="shallow-affect_somewhat">
+                  <input id="shallow-affect_somewhat" type="radio" name="shallow-affect" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="shallow-affect_agree">
+                  <input id="shallow-affect_agree" type="radio" name="shallow-affect" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                8. Are you callous, or do you lack empathy?
+              </dt>
+              <dd class="radio-group">
+                <label for="callousness_disagree">
+                  <input id="callousness_disagree" type="radio" name="callousness" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="callousness_somewhat">
+                  <input id="callousness_somewhat" type="radio" name="callousness" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="callousness_agree">
+                  <input id="callousness_agree" type="radio" name="callousness" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                9. Do you have a "parasitic lifestyle"?
+              </dt>
+              <dd class="radio-group">
+                <label for="parasitic_disagree">
+                  <input id="parasitic_disagree" type="radio" name="parasitic" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="parasitic_somewhat">
+                  <input id="parasitic_somewhat" type="radio" name="parasitic" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="parasitic_agree">
+                  <input id="parasitic_agree" type="radio" name="parasitic" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                10. Do you have poor behavioral controls?
+              </dt>
+              <dd class="radio-group">
+                <label for="behavioral-control_disagree">
+                  <input id="behavioral-control_disagree" type="radio" name="behavioral-control" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="behavioral-control_somewhat">
+                  <input id="behavioral-control_somewhat" type="radio" name="behavioral-control" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="behavioral-control_agree">
+                  <input id="behavioral-control_agree" type="radio" name="behavioral-control" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                11. Do you have a history of promiscuous sexual behavior?
+              </dt>
+              <dd class="radio-group">
+                <label for="promiscuity_disagree">
+                  <input id="promiscuity_disagree" type="radio" name="promiscuity" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="promiscuity_somewhat">
+                  <input id="promiscuity_somewhat" type="radio" name="promiscuity" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="promiscuity_agree">
+                  <input id="promiscuity_agree" type="radio" name="promiscuity" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                12. Do you have a history of early behavioral problems?
+              </dt>
+              <dd class="radio-group">
+                <label for="juvenile-deliquency_disagree">
+                  <input id="juvenile-deliquency_disagree" type="radio" name="juvenile-deliquency" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="juvenile-deliquency_somewhat">
+                  <input id="juvenile-deliquency_somewhat" type="radio" name="juvenile-deliquency" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="juvenile-deliquency_agree">
+                  <input id="juvenile-deliquency_agree" type="radio" name="juvenile-deliquency" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                13. Are you overly impulsive?
+              </dt>
+              <dd class="radio-group">
+                <label for="impulsivity_disagree">
+                  <input id="impulsivity_disagree" type="radio" name="impulsivity" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="impulsivity_somewhat">
+                  <input id="impulsivity_somewhat" type="radio" name="impulsivity" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="impulsivity_agree">
+                  <input id="impulsivity_agree" type="radio" name="impulsivity" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                14. Do you lack realistic long-term goals?
+              </dt>
+              <dd class="radio-group">
+                <label for="lack-of-planning_disagree">
+                  <input id="lack-of-planning_disagree" type="radio" name="lack-of-planning" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="lack-of-planning_somewhat">
+                  <input id="lack-of-planning_somewhat" type="radio" name="lack-of-planning" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="lack-of-planning_agree">
+                  <input id="lack-of-planning_agree" type="radio" name="lack-of-planning" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                15. Do you have a high level of irresponsibility?
+              </dt>
+              <dd class="radio-group">
+                <label for="irresponsibility_disagree">
+                  <input id="irresponsibility_disagree" type="radio" name="irresponsibility" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="irresponsibility_somewhat">
+                  <input id="irresponsibility_somewhat" type="radio" name="irresponsibility" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="irresponsibility_agree">
+                  <input id="irresponsibility_agree" type="radio" name="irresponsibility" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                16. Do you fail to accept responsibility for your own actions?
+              </dt>
+              <dd class="radio-group">
+                <label for="low-conscientiousness_disagree">
+                  <input id="low-conscientiousness_disagree" type="radio" name="low-conscientiousness" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="low-conscientiousness_somewhat">
+                  <input id="low-conscientiousness_somewhat" type="radio" name="low-conscientiousness" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="low-conscientiousness_agree">
+                  <input id="low-conscientiousness_agree" type="radio" name="low-conscientiousness" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                17. Have you had many short-term "marital" relationships?
+              </dt>
+              <dd class="radio-group">
+                <label for="undependable_disagree">
+                  <input id="undependable_disagree" type="radio" name="undependable" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="undependable_somewhat">
+                  <input id="undependable_somewhat" type="radio" name="undependable" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="undependable_agree">
+                  <input id="undependable_agree" type="radio" name="undependable" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                18. Do you have a history of juvenile delinquency?
+              </dt>
+              <dd class="radio-group">
+                <label for="juvenile-delinquency_disagree">
+                  <input id="juvenile-delinquency_disagree" type="radio" name="juvenile-delinquency" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="juvenile-delinquency_somewhat">
+                  <input id="juvenile-delinquency_somewhat" type="radio" name="juvenile-delinquency" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="juvenile-delinquency_agree">
+                  <input id="juvenile-delinquency_agree" type="radio" name="juvenile-delinquency" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                19. Have you ever experienced a "revocation of conditional release"?
+              </dt>
+              <dd class="radio-group">
+                <label for="probation-revocation_disagree">
+                  <input id="probation-revocation_disagree" type="radio" name="probation-revocation" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="probation-revocation_somewhat">
+                  <input id="charm_somewhat" type="radio" name="probation-revocation" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="probation-revocation_agree">
+                  <input id="probation-revocation_agree" type="radio" name="probation-revocation" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+            <dl class="field">
+              <dt class="field-label">
+                20. Do you display "criminal versatility"?
+              </dt>
+              <dd class="radio-group">
+                <label for="criminal-versatility_disagree">
+                  <input id="criminal-versatility_disagree" type="radio" name="criminal-versatility" value="disagree" checked="">
+                    Disagree
+                </label>
+                <label for="criminal-versatility_somewhat">
+                  <input id="criminal-versatility_somewhat" type="radio" name="criminal-versatility" value="somewhat">
+                    Somewhat agree
+                </label>
+                <label for="criminal-versatility_agree">
+                  <input id="criminal-versatility_agree" type="radio" name="criminal-versatility" value="agree">
+                    Agree
+                </label>
+              </dd>
+            </dl>
+          </section>
+          <div class="field">
+            <p class="field-label">
+              I would like to:
+            </p>
+            <label class="input-label" for="data-usage">
+              <input id="data-usage" type="checkbox" name="preferences" value="data-usage">
+                Allow my anonymous data to be used for research purposes.
+            </label>
+            <label class="input-label" for="future-studies">
+              <input id="future-studies" type="checkbox" name="preferences" value="future-studies">
+                Participate in similar future studies.
+            </label>
+            <label class="input-label" for="news">
+              <input id="news" type="checkbox" name="preferences" value="news">
+                Receive news about the progress of the research.
+            </label>
+          </div>
+          <div class="field">
+            <label class="field-label" for="textarea">
+              Comments
+            </label>
+          <textarea id="textarea" class="textarea" name="comment" placeholder="Please enter your comments"></textarea>
+          </div>
+          <button id="submit" class="button" type="submit">
+            Submit
+          </button>
+        </form>
+      </article>
+      <footer id="footer" class="item">
+        <p class="footnote">
+        Read more about the test in the fascinating <a href="https://en.wikipedia.org/wiki/The_Psychopath_Test" target="_blank">book</a> of the same name by Jon Ronson.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
+

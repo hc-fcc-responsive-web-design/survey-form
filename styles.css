@@ -1,0 +1,318 @@
+/* GLOBAL STYLES */
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap');
+:root {
+  --color-dark-yellow: rgba(236, 199, 49, 1);
+  --color-fuschia: rgba(232, 19, 120, 1);
+  --color-yellow: rgba(240, 233, 46, 1);
+}
+
+body {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 0;
+  padding: 0;
+  /* Typography */
+  /* Other */
+}
+
+/* GRID & CONTAINER */
+
+#container {
+  /* Positioning */
+  /* Display and Box model */
+  background: var(--color-yellow);
+  display: grid;
+  grid-template-columns: [first] 1fr;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  grid-template-rows: [first] auto [second] 1fr [third] auto;
+  justify-items: center;
+  padding: 0px 20px;
+  /* Typography */
+  font-family: 'Exo 2', sans-serif;
+  /* Other */
+}
+
+#header {
+  /* Positioning */
+  /* Display and Box model */
+  grid-area: header;
+  /* Typography */
+  /* Other */
+}
+
+#content {
+  /* Positioning */
+  /* Display and Box model */
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 5px var(--color-dark-yellow);
+  grid-area: content;
+  /* Typography */
+  /* Other */
+}
+
+#footer {
+  /* Positioning */
+  /* Display and Box model */
+  grid-area: footer;
+  /* Typography */
+  /* Other */
+}
+
+.item {
+  /* Positioning */
+  /* Display and Box model */
+  align-items: stretch;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 750px;
+  /* Typography */
+  /* Other */
+}
+
+/* HEADER STYLES */
+
+#title {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 0;
+  /* Typography */
+  color: var(--color-fuschia);
+  font-size: 4.2rem;
+  font-weight: 700;
+  text-align: center;
+  /* Other */
+}
+
+#description {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 10px 0 0 0;
+  /* Typography */
+  color: var(--color-fuschia);
+  font-size: 1.2rem;
+  text-align: center;
+  /* Other */
+}
+
+#description a {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  color: var(--color-fuschia);
+  /* Other */
+}
+
+#title::selection, 
+#description::selection, 
+#description a::selection {
+  /* Positioning */
+  /* Display and Box model */
+  background: var(--color-fuschia);
+  /* Typography */
+  color: var(--color-yellow);
+  /* Other */
+}
+
+#description a:hover, 
+#description a:hover::selection {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  color: black;
+  /* Other */
+}
+
+/* CONTENT STYLES */
+
+.field {
+  /* Positioning */
+  /* Display and Box model */
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 30px 0px;
+  /* Typography */
+  /* Other */
+}
+
+.input {
+  /* Positioning */
+  /* Display and Box model */
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 0 10px 0 10px;
+  width: 100%;
+  /* Typography */
+  color: black;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1rem;
+  /* Other */
+}
+
+.textarea {
+  /* Positioning */
+  /* Display and Box model */
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  min-height: 100px;
+  padding: 10px 10px 5px 10px;
+  width: 100%;
+  /* Typography */
+  color: black;
+  font-family: inherit;
+  font-size: 1rem;
+  /* Other */
+  resize: vertical;
+}
+
+.radio-group {
+  /* Positioning */
+  /* Display and Box model */
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  justify-content: space-around;
+  margin: 0;
+  padding: 10px 0 0 0;
+  /* Typography */
+  /* Other */
+}
+
+.field-label {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 0px 0px 10px 0px;
+  /* Typography */
+  color: var(--color-fuschia);
+  font-size: 1.2rem;
+  font-weight: 700;
+  /* Other */
+}
+
+.input-label {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 0px 0px 10px 0px;
+  /* Typography */
+  /* Other */
+}
+
+.button {
+  /* Positioning */
+  /* Display and Box model */
+  background: var(--color-fuschia);
+  border: 1px solid var(--color-fuschia);
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  /* Typography */
+  color: var(--color-yellow);
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  /* Other */
+}
+
+.button:hover {
+  /* Positioning */
+  /* Display and Box model */
+  border: 1px solid black;
+  /* Typography */
+  /* Other */
+}
+
+.field-label:hover {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  /* Other */
+  pointer-events: none;
+}
+
+.input:hover, 
+.textarea:hover {
+  /* Positioning */
+  /* Display and Box model */
+  border: 1px solid black;
+  /* Typography */
+  /* Other */
+}
+
+.input:focus, 
+.textarea:focus {
+  /* Positioning */
+  /* Display and Box model */
+  border: 1px solid black;
+  /* Typography */
+  /* Other */
+}
+
+.input::selection, 
+.field-label::selection, 
+.textarea::selection {
+  /* Positioning */
+  /* Display and Box model */
+  background: var(--color-fuschia);
+  /* Typography */
+  color: white;
+  /* Other */
+}
+
+/* FOOTER STYLES */
+
+.footnote {
+  /* Positioning */
+  /* Display and Box model */
+  margin: 0;
+  /* Typography */
+  color: var(--color-fuschia);
+  font-size: 1rem;
+  text-align: center;
+  /* Other */
+}
+
+.footnote a {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  color: var(--color-fuschia);
+  /* Other */
+}
+
+.footnote::selection,
+.footnote a::selection {
+  /* Positioning */
+  /* Display and Box model */
+  background: var(--color-fuschia);
+  /* Typography */
+  color: var(--color-yellow);
+  /* Other */
+}
+
+.footnote a:hover,
+.footnote a:hover::selection {
+  /* Positioning */
+  /* Display and Box model */
+  /* Typography */
+  color: black;
+  /* Other */
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 820px){
+  .item {
+    width: 100%;
+  }
+}
