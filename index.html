@@ -18,7 +18,7 @@
           Original 20 questions by <a href="https://en.wikipedia.org/wiki/Robert_D._Hare" target="_blank">Dr. Robert D. Hare</a>
         </p>
       </header>
-      <article id="content" class="item">
+      <div id="content" class="item">
         <form id="survey-form">
           <div class="field">
             <label id="name-label" class="field-label" for="name">
@@ -42,8 +42,8 @@
             <label id="dropdown-label" class="field-label" for="dropdown">
               Sex
             </label>
-            <select id="dropdown" class="input" type="text" name="dropdown" required="">
-              <option disabled="" selected="">
+            <select id="dropdown" class="input" name="dropdown" required="">
+              <option value="">
                 Please select your biological sex
               </option>
               <option class="option" value="Male">
@@ -60,7 +60,7 @@
               </option>
             </select>
           </div>
-          <section id="survey">
+          <div id="survey">
             <dl class="field">
               <dt class="field-label">
                 1. Do you have "excess glibness" or superficial charm?
@@ -413,7 +413,7 @@
                     Disagree
                 </label>
                 <label for="probation-revocation_somewhat">
-                  <input id="charm_somewhat" type="radio" name="probation-revocation" value="somewhat">
+                  <input id="probation-revocation_somewhat" type="radio" name="probation-revocation" value="somewhat">
                     Somewhat agree
                 </label>
                 <label for="probation-revocation_agree">
@@ -441,7 +441,7 @@
                 </label>
               </dd>
             </dl>
-          </section>
+          </div>
           <div class="field">
             <p class="field-label">
               I would like to:
@@ -469,7 +469,7 @@
             Submit
           </button>
         </form>
-      </article>
+      </div>
       <footer id="footer" class="item">
         <p class="footnote">
         Read more about the test in the fascinating <a href="https://en.wikipedia.org/wiki/The_Psychopath_Test" target="_blank">book</a> of the same name by Jon Ronson.
